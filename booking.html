@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking page</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navigationbar">
+            <a class="skip-to-content" href="#aboutUs">skip to content</a>
+
+            <!--- We created the logo with this icon from flaticon 
+                togehter with text and transparent background:
+                https://www.flaticon.com/free-icon/home_25694?term=home&page=1&position=2&page=1&position=2&related_id=25694&origin=search#
+            -->
+            <div class="logo-image"><img src="images/Logo.png" alt="Foodie's logo"></div>
+            <input type="checkbox" id="menu" name="menu"> 
+            <label for="menu" class="toggler">&#160;</label>
+            <ul class="navigation-list">
+                <li class="list-item"><a href="welcome.html">Welcome</a></li>
+                <li class="list-item"><a href="booking.html">Booking</a></li>
+                <li class="list-item"><a href="menu.html">Menu</a></li>
+                <li class="list-item"><a href="accessibility.html">Accessibility</a></li>
+                <li class="list-item"><a href="topical-information.html">Topical Information</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="booking-page" id="booking-page">
+            <!--- ABOUT US STARTS -->
+    <section class="about" id="aboutUs">
+        <h1 class="heading"> <span>about</span> us</h1>
+
+        <div class="row">
+
+            <div class="image">
+
+            <!--- https://www.pexels.com/nb-no/bilde/hus-manuell-vintage-retro-3769711/ -->
+                <img src="images/Book-now.jpg" alt="Staff cleaning up after guests celebrated in one of our avaible rooms.">
+            </div>
+
+            <div class="content">
+                <h2>currently our rooms are located in Foodie 50th Avenue 2</h2>
+                <p>Have you ever struggled with getting an easy and simple experience when you need to rent a room?<br>
+                Look no further. We rent out various size of rooms for people and we also offer several service making you experience less stressful</p>
+                <a href="#information" class="booking-button">Read more</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--- ABOUT US ENDS -->
+
+    <!--- IMPORTANT INFORMATION STARTS -->
+
+
+    <section class="information" id="information">
+        <h1 class="heading"> <span>Important</span> Information</h1>
+
+        <div class="row">
+            <div class="content">
+                <h2>How to make a reservation</h2>
+                <p>As mentioned before we do have several room, they range in 1 to to 50, 51 to 100 and 100-200 individuals at Foodie 50th Avenue 2<br>
+                We have experience with birthday celebration, school graduation, conferance,etc. Also we are especially good with weddings!
+                    <br>We can rent out various size of rooms for people and we also offer several service making you experience less stressful.
+                    All you need to do is click this button below and write in your name, telephone number, email, and <br>
+                write down what the rooms are needed for, date it will be held, how many individuals will be there, and from there we will get into touch with you!
+                </p>
+                <a href="#contact" class="booking-button">Book now</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--- IMPORTANT INFORMATION ENDS -->
+
+    <!--- SERVICES STARTS -->
+
+    <section class="services" id="services">
+
+        <h2 class="heading">our <span> services</span></h2>
+
+        <div class="box-container">
+
+            <div class="box">
+                <!--- LINK:
+            https://www.flaticon.com/free-icon/teamwork_3281785?term=staff&page=1&position=1&page=1&position=1&related_id=3281785&origin=style#
+            -->
+                <img src="images/service1.png" class="service-img" alt="">
+                <h3>service-oriented staff</h3>
+                <p>We have great staff satification in our company, <br> and they are happy and mentally prepared staff ready for any situation.<br>They thrive from customer service.</p>
+            </div>
+             <!--- LINK:
+            https://www.flaticon.com/free-icon/wipe_2890529?term=cleaning&page=1&position=3&page=1&position=3&related_id=2890529&origin=style#
+            -->
+            <div class="box">
+                <img src="images/service2.png" class="service-img"  alt="">
+                <h3>cleaning staff ready when it needs to!</h3>
+                <p>After an amazing celebration, it ends up with trash everywhere? 
+                    <br>We got you with our cleaners ready to save the day.</p>
+            </div>
+
+            <div class="box">
+                <!--- LINK:
+                https://www.flaticon.com/free-icon/support_1067566?term=customer%20service&page=1&position=2&page=1&position=2&related_id=1067566&origin=search#
+                -->
+                <img src="images/service3.png" class="service-img" alt="">
+                <h3>24/7 support ready for any situation!</h3>
+                <p>Did any changes happend?
+                    <br> We will act immediately<br>Don't stress out and just call <a href="tel:+4799663311">+47 99 66 33 11</a>.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--- SERVICES ENDS -->
+
+
+    
+    <!--- CONTACT STARTS -->
+
+    <section class="contact" id="contact">
+
+        <h2 class="heading"> <span>contact</span> us</h2>
+
+        <div class="row">
+
+            <div class="image">
+                <!--- LINK:
+                https://unsplash.com/photos/idhx-MOCDSk
+                -->
+                <img src="images/Book-contactUs.jpg" alt="">
+            </div>
+
+            <form>
+                <h3>get in touch</h3>
+
+                <span>your name</span>
+                <input type="text" class="box">
+
+                <span>your number</span>
+                <input type="number" class="box">
+
+                <span>your email</span>
+                <input type="email" class="box">
+
+                <span>your message</span>
+                <textarea class="box" cols="35" rows="10"></textarea>
+
+                <input type="submit" value="send message" class="btn">
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!--- CONTACT ENDS -->
+        
+
+    </main>
+
+    <footer>
+        <div class="footer-first-box">        
+            <h2>Foodie</h2>
+            <address>
+                <p>OPEN: 9am-9pm</p>
+                <p>Foodie 50th Avenue 2</p>
+                <p>Phone: <a href="tel:+4799663311">+47 99 66 33 11</a></p>
+                <p><a href="mailto:Foodie@online.com">Foodie@online.com</a></p>
+            </address>
+        </div>
+        <div class="footer-second-box">  
+            <p>Images are sourced from <a href="https://unsplash.com/" target="_blank">Unsplash</a>, <a href="https://pixabay.com/" target="_blank">Pixabay</a>, <a href="https://www.pexels.com/" target="_blank">Pexels</a> and <a href="https://www.flaticon.com/" target="_blank">flaticon</a></p>
+            <p>Created by Ahmed Said Muse/s375121 &amp; Frederik Alexander Biltvedt/s362044</p>
+        </div>
+    </footer>
+</body>
+</html>

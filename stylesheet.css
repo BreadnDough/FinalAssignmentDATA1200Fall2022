@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-light-blue-color: rgb(173, 216, 230); /*light blue*/
+    --main-dark-blue-color: rgb(0, 0, 184); /*dark blue text*/
+    --main-black-color: rgb(7, 7, 6); /*not vanilla black*/
+    --main-grey-color: rgb(242, 242, 242); /*lightish grey*/
+    --main-box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+}
+
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif; 
+    color: black;
+}
+h1,h2,h3{
+    padding: 1rem 1rem 1rem 0;
+    font-weight:500;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.6rem;
+}
+h3{
+    font-size: 1.3rem;
+}
+
+p{
+    
+    font-size: 1.1rem;
+    line-height: 2rem;
+    
+}
+a{
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+}
+main{
+    margin:0 auto;
+    margin-top:5rem;
+    width: 80%;
+}
+
+/*-------------- SKIP-CONTENT FUNCTION STARTS ------*/
+
+.skip-to-content{
+    bottom:30%;
+    left:21%;
+    position: absolute;
+    transform: translateY(-300%);
+        background-color: black;
+        padding: 0.5rem;
+  }
+  .skip-to-content:focus {
+    transform: translateY(0%);
+  }
+
+/*-------------- SKIP-CONTENT FUNCTION ENDS ------*/
+
+
+/*-------------- HEADER STARTS --------------*/
+header{
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    color: white;
+    z-index: 50;
+    top:0;
+}
+.navigationbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 70px;
+    align-items: center;
+    z-index: 100;
+}
+.logo-image img{
+    height: 45px;
+    width: auto;
+    padding-top: 5px;
+}
+.navigation-list{
+    list-style-type: none;
+}
+.navigation-list .list-item{
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.navigationbar a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.navigationbar a:hover{
+    color: var(--main-light-blue-color);
+}
+#menu{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    height: 24px;
+    width: 24px;
+    opacity: 0;
+}
+.menu-line{
+    margin: 4px 0px 4px 0px;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+}
+.toggler{
+    display: none;
+    cursor: pointer;
+    color:white;
+    font-size: 24px;
+}
+.toggler .toggle-text{
+    font-size: 1.3rem;
+}
+
+/*-------------- HEADER ENDS --------------*/
+
+/*-------------- FOOTER STARTS -------------------*/
+
+footer{
+    display: flex;
+    width: 92%;
+    padding: 2rem;
+    margin: 2.5rem auto 0;
+    color: white;
+    background-color: black;
+    column-gap: 4rem;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color:var(--main-light-blue-color);
+}
+/*-------------- FOOTER ENDS ---------------------*/
+
+
+
+/*-------------- WELCOME PAGE STARTS -------------*/
+
+.welcome-page .welcome{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    height: fit-content;
+    min-height: 100vh;
+}
+.welcome-page .welcome .welcome-left{
+    padding: 3rem 0;
+}
+.welcome-page .welcome .welcome-left h1 span{
+    color: var(--main-dark-blue-color);
+}
+.welcome-page .welcome .welcome-left .button{
+    display: inline-block;
+    background: var(--main-black-color);
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.welcome-page .welcome .welcome-left .button:hover{
+    transform: scale(0.99);
+    color: var(--main-light-blue-color);
+}
+
+.welcome-page .welcome .welcome-image{
+    min-height: 15vh;
+    width: 100%;
+    border-radius: 1.5rem;
+    transform: translate(15%, 25px);
+}
+/*-------------- WELCOME PAGE ENDS ---------------*/
+
+
+
+/*-------------- BOOKING PAGE STARTS -------------*/
+
+
+/*-------------- ABOUT US STARTS -------------*/
+
+.about{
+    margin: 3rem 0 ; /*to make space for the page*/
+}
+.heading{
+    text-align: center;
+    font-weight: 700;
+    padding: 4rem 0 0 0;
+}
+.heading::first-letter{
+    text-transform: capitalize;
+}
+.heading span{
+    text-transform: capitalize;
+    color: var(--main-dark-blue-color);
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.image{
+    flex: 1 1 40rem;
+}
+.image img{
+    max-width: 100%;
+}
+.content{
+    flex: 1 1 50rem;
+    padding: 2.5rem;
+}
+.content h2{
+    padding-top: 1rem;
+    font-weight: 600;
+}
+.content h2::first-letter{
+    text-transform: capitalize;
+}
+.content p{
+    padding: 1rem 0;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.content .booking-button{
+    margin-top: 1rem;
+    display: inline-block;
+    background: var(--main-black-color);
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem 3rem; 
+    text-decoration: none;
+}
+.booking-button:hover{
+    letter-spacing: .15rem;
+    color: var(--main-light-blue-color);
+}
+/*-------------- ABOUT US ENDS -------------*/
+
+
+/*-------- IMPORTANT INFORMATION STARTS -----*/
+.information{
+    background-color: var(--main-grey-color);
+    padding-top: 4rem;
+    margin: 5rem 0;
+}
+.information h2{
+    padding: 1.5rem 0;  /*creating space*/
+
+}
+.information p{
+    padding: 2rem 0; /*creating space*/
+
+}
+.information .booking-button{
+    margin: 3rem 0;
+}
+/*--------- IMPORTANT INFORMATION ENDS ------*/
+
+
+/*-------------- SERVICES STARTS -------------*/
+.services{
+    padding: 5rem 0;
+}
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+.services .box-container .box{
+    padding: 0.2rem;
+    text-align: center;
+    border: 0.1rem solid var(--main-black-color);
+    box-shadow: var(--main-box-shadow);
+}
+.service-img{
+    width: 200px;
+    height: 380px;
+    object-fit: contain;
+}
+.services .box-container .box h3{
+    font-weight: 600;
+}
+.services .box-container .box h3::first-letter{
+    text-transform: capitalize;
+}
+.services .box-container .box p{
+    line-height: 1.5;
+    padding: 1rem 0;
+    font-weight: 400;
+}
+/*-------------- SERVICES ENDS --------------*/
+
+
+/*-------------- CONTACT US STARTS -----------*/
+.contact{
+    background: var(--main-grey-color);
+    padding: 1.5rem;
+}
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.contact .row .image{
+    flex: 1 1 25rem;
+}
+.contact .row .image img{
+    width: 100%;
+}
+.contact .row form{
+    flex: 1 1 40rem;
+    border: .1rem solid var(--main-black-color);
+    padding: 2rem;
+}
+.contact .row form h3{
+    text-align: center;
+    padding-bottom: 1rem;
+    font-weight: 500;
+}
+.contact .row form h3::first-letter, .contact .row form span::first-letter{
+    text-transform: capitalize;
+}
+.contact .row form span{
+    display: block;
+    padding-bottom: 1rem;
+    color: var(--main-dark-blue-color);
+    font-size: 1.6rem;
+}
+.contact .row form .box{
+    width: 100%;
+    background: none;
+    border-bottom: .1rem solid var(--main-black-color);
+    color: var(--main-color);
+    text-transform: none;
+    padding: .5rem 0;
+    margin-bottom: 1rem;
+}
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+input[type=submit]{
+    background-color: var(--main-dark-blue-color);
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 0.5rem;
+}
+/*-------------- CONTACT US ENDS -------------*/
+
+
+/*-------------- BOOKING PAGE ENDS -------------*/
+
+
+
+/*-------------- MENU PAGE STARTS -------------*/
+#ourMenuLunch {
+    padding: 1.2rem 0; /*to make skip to content function work by adding padding to first section*/
+}
+#ourMenuLunch .box-container,
+.ourMenu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+#ourMenuLunch .box-container .box,
+.ourMenu .box-container .box{
+    padding: 0.2rem;
+    text-align: center;
+    border: 0.1rem solid var(--main-black-color);
+    box-shadow: var(--main-box-shadow);
+    border-radius: .7rem;
+    background-color: var(--main-light-blue-color);
+}
+#ourMenuLunch .box-container .box h3, 
+.ourMenu .box-container .box h3{
+    font-weight: 500;
+}
+#ourMenuLunch .box-container .box h3::first-letter,
+.ourMenu .box-container .box h3::first-letter{
+    text-transform: capitalize;
+}
+.ourMenu-img{
+    width: 365px;
+    height: 380px;
+    object-fit: cover;
+}
+#ourMenuLunch .box-container .box p,
+.ourMenu .box-container .box p{
+    line-height: 1.5;
+    padding: 1rem 0;
+    font-weight: 400;
+}
+.allergens{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+/*-------------- MENU PAGE ENDS ---------------*/
+
+
+
+
+/*-------------- ACCESSIBILITY PAGE STARTS ---------------*/
+#accessibility-page h1{
+    padding: 4.2rem 0;
+}
+.access-grid{
+    display:grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+.access-grid .accessibility-paragraphs{
+    margin-right: 3rem;
+}
+.access-grid img{
+    width: 100%;
+}
+.access-article >div{
+    padding-bottom: 2rem;
+}
+
+.accessibility-page-grid-img{
+    width: 100%;
+    align-self: center;
+    /*padding-bottom: 1rem;*/
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    border-radius: 20px;
+ }
+
+/*-------------- ACCESSIBILITY PAGE ENDS ---------------*/
+
+
+
+/*-------------- TOPICAL INFORMATION PAGE STARTS ---------------*/
+
+
+.topical-page{
+    display: flex;
+    margin-top: 5rem; /*to have some space between menu and start of topical page*/
+    width: 92%;
+}
+.topical-page p{
+    margin-bottom: 1.5rem;
+}
+.topical-page article h1{
+    padding-top: 5rem;
+}
+.topical-page article .photo-name{ /*simplified .photo-name class for every owner of pictures irl*/
+    font-style: italic;
+    font-weight: 400;
+}
+
+.topical-page .image-with-text img{
+    object-fit: contain; 
+    max-width: 100%;
+}
+
+.topical-page article{
+    margin-right: 20px;
+}
+
+.topical-page article ol{
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    
+}
+
+.topical-page article ol li{
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+    
+.topical-page aside{
+    min-width: 25%;
+    margin-top: 5rem; /*to fit relevant information with the h1*/
+    background-color: var(--main-grey-color); /*reused color*/
+    border-radius: 40px 10px;
+}
+
+.topical-page aside h2{
+    text-align: center;
+}
+ 
+.topical-page .informativeLink{
+    margin: 2rem;
+    height: 100%;
+    padding: 1.2rem;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+}
+.topical-page aside .informativeLink h2{
+    text-align: left;
+    font-size: 1.3rem
+}
+
+.topical-page aside .informativeLink a{
+    font-size: 1.4rem;
+}
+
+.topical-page aside .informativeLink p{
+    margin-top: 0.7rem;
+}
+
+.topical-page aside .informativeLink .topical-information-img img{
+    display: block;
+    width: 35%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+/*-------------- TOPICAL INFORMATION PAGE ENDS ---------------*/
+
+
+
+/*-------------- MEDIA QUERIES STARTS ------------*/
+
+
+@media screen and (max-width: 875px){
+    body {
+        font-size: 14px;
+    }
+
+    .home-content{
+        padding: 0;
+    }
+    #home-page .home{
+        min-height: 100vh;
+        height: fit-content;
+    }
+
+    .skip-to-content{
+        left: 30%;
+    }
+    
+    .navigationbar{
+        flex-direction: column;
+        padding: 0px 40px;
+    }
+
+    .logo-image{
+        width: 100%;
+    }
+
+    .logo-image img{
+        padding-top: 10px;
+    }
+
+    .toggler{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 40px;
+    }
+
+    .toggler::after{
+        content: "Menu \2630";
+    }
+
+        #menu{
+        display: block;
+    }
+
+    #menu:checked ~ .toggler::after{
+        content: "Close \2716";
+    }
+
+    .navigation-list{
+        display: none;
+        position: fixed;
+        top: -100%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .navigation-list .list-item{
+        display: block;
+        border-top: 2px solid white;
+    }
+
+
+    #menu:checked + label + .navigation-list{
+        background-color: black;
+        top: 55px;
+        display: block;
+    }
+    
+    .logo-image{
+        top:10px;
+        left: 40px;
+        font-size: 1.5rem;
+    }
+
+    .welcome-page .welcome{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .welcome-page .welcome .welcome-left{
+        order: 2;
+    }
+    .welcome-page .welcome .welcome-image{
+        transform: none;
+        order: 1;
+    }
+    .about{
+        margin: 0; 
+    }
+    .content .booking-button{
+        font-size: 1.6em;
+    }
+    .information, .services{
+        margin: 2rem 0;
+    }
+
+    .topical-page aside{
+        margin-top: 0;
+
+    }
+    .topical-page aside .informativeLink .topical-information-img img{
+        max-width: 360px;
+
+    }
+
+    footer{
+         flex-direction: column;
+     }
+
+    .footer-first-box{
+        order: 1;
+    }
+
+    .footer-second-box{
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    body {
+        font-size: 17px;
+    }
+    .topical-page{
+        flex-direction: column;
+
+    }
+    .topical-page article h1{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.8rem;
+    }
+    .topical-page article{
+        margin-right: 0;
+    }
+    .topical-page aside{
+        text-align: center;
+        padding: .5rem;
+    }
+    .topical-page aside .informativeLink{
+        max-width: 320px;
+        margin-left:  auto;
+        margin-right: auto;
+    }
+}
+
+/*---- FOR 4K SCREENS -----*/
+@media screen and (min-width: 1800px){
+    body {
+        font-size: 40px;
+    }
+    
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.7rem;
+    }
+    
+    p{
+      
+        font-size: 1.5rem;
+    }
+    li{
+        font-size: 1.5rem;
+        
+    }
+    a{
+        font-size: 1.5rem;
+    }
+    main{
+        margin-top:6rem;
+    }
+}
+/*----- MAIN MEDIA QUERY ENDS ---*/
