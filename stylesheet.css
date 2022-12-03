@@ -1,5 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Use ctrl+f, then search these names in the CSS-structure:
 
+Generalized selectors
+
+SKIP-CONTENT FUNCTION STARTS
+HEADER STARTS
+FOOTER STARTS
+
+Each webpages, and the tabbed names are certain sections of the parent
+
+WELCOME PAGE STARTS
+BOOKING PAGE STARTS  //parent
+    ABOUT US STARTS
+    IMPORTANT INFORMATION STARTS
+    SERVICES STARTS
+    CONTACT US STARTS
+MENU PAGE STARTS
+ACCESSIBILITY PAGE STARTS 
+TOPICAL INFORMATION PAGE STARTS
+
+MEDIA QUERIES STARTS
+    FOR 950 WIDTH SCREEN STARTS 
+    FOR 1100 WIDTH SCREEN STARTS
+    FOR 1800 WIDTH SCREEN STARTS
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
     --main-light-blue-color: rgb(173, 216, 230); /*light blue*/
     --main-dark-blue-color: rgb(0, 0, 184); /*dark blue text*/
@@ -35,8 +62,7 @@ h3{
 p{
     
     font-size: 1.1rem;
-    line-height: 2rem;
-    
+    line-height: 2rem;   
 }
 a{
     font-size: 1.3rem;
@@ -141,8 +167,6 @@ footer a:hover{
     color:var(--main-light-blue-color);
 }
 /*-------------- FOOTER ENDS ---------------------*/
-
-
 
 /*-------------- WELCOME PAGE STARTS -------------*/
 .welcome-page .welcome{
@@ -407,7 +431,6 @@ input[type=submit]{
 }
 /*-------------- MENU PAGE ENDS ---------------*/
 
-
 /*-------------- ACCESSIBILITY PAGE STARTS ---------------*/
 #accessibility-page{
     padding-top: 4rem;
@@ -435,7 +458,6 @@ input[type=submit]{
     padding-bottom: 1.5rem;
 }
 /*-------------- ACCESSIBILITY PAGE ENDS ---------------*/
-
 
 /*-------------- TOPICAL INFORMATION PAGE STARTS ---------------*/
 .topical-page{
@@ -506,7 +528,7 @@ input[type=submit]{
 
 
 /*-------------- MEDIA QUERIES STARTS ------------*/
-/*---- FOR 875 WIDTH SCREEN -----*/
+/*---- FOR 950 WIDTH SCREEN STARTS -----*/
 @media screen and (max-width: 950px){
     body {
         font-size: 14px;
@@ -609,9 +631,9 @@ input[type=submit]{
         order: 2;
     }
 }
-/*---- FOR 875 WIDTH SCREEN ENDS -----*/
+/*---- FOR 950 WIDTH SCREEN ENDS -----*/
 
-/*---- FOR 1100 WIDTH SCREEN -STARTS ----*/
+/*---- FOR 1100 WIDTH SCREEN STARTS ----*/
 @media screen and (max-width: 1100px){
     body {
         font-size: 17px;
