@@ -342,11 +342,19 @@ footer a:hover{
 .contact .row form h3::first-letter, .contact .row form span::first-letter{
     text-transform: capitalize;
 }
-.contact .row form label{
+.contact .row form label,
+.contact .row form small{
     display: block;
+}
+.contact .row form label{
     padding-bottom: 1rem;
     color: var(--main-dark-blue-color);
     font-size: 1.6rem;
+}
+.contact .row form small{
+    padding: 0 0 1.7rem 0;
+    font-size: 1.2;
+    font-style: italic;
 }
 .contact .row form input[type=text],
 .contact .row form input[type=tel],
