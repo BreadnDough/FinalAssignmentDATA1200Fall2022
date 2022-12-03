@@ -342,7 +342,7 @@ footer a:hover{
 .contact .row form h3::first-letter, .contact .row form span::first-letter{
     text-transform: capitalize;
 }
-.contact .row form span{
+.contact .row form label{
     display: block;
     padding-bottom: 1rem;
     color: var(--main-dark-blue-color);
@@ -364,7 +364,7 @@ footer a:hover{
 input[type=submit]{
     background-color: var(--main-dark-blue-color);
     border: none;
-    color: white;
+    color: rgb(255,255,255);
     padding: 1rem 2rem;
     text-decoration: none;
     cursor: pointer;
