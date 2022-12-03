@@ -31,50 +31,84 @@
 
     <main id="accessibility-page">
             <h1>Accessibility</h1>
-        <div class="accessibility-paragraphs">
+        <div class="accessibility-page-paragraph">
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+                Accessibility for us is that the webpage we are creating will be easy to use for more minority groups. 
+                With our team we want to reach that as much as possible. At first we needed to get together in order to 
+                talk with each other about universal design for our user, so we set a clear road for ourselves on what 
+                this topic can give us. What we reached, was that our website can be easily accessible to as many user 
+                of it as imaginable, regardless of their impediment, handicaps or potential hindrances in their ways. 
+                Therefor, we simply mentioned several disabilities that could make the journey on our website less 
+                effective with the users that have said condition(s). 
             </p>
         </div>
-
-        <article class="access-article">
-
-
-            <div class="access-grid">
-                <div class="accessibility-paragraphs">
-                    <h2>What have we done?</h2>
+        <article class="accessibility-page-article">
+            <div class="accessibility-page-grid">
+                <div class="accessibility-page-paragraph">
+                    <h2>Screenreaders</h2>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
-                    </p>
-
-                </div>
-                <img src="images/Book-contactUs.jpg" alt="" class="accessibility-page-grid-img">
-            </div>
-            <div class="access-grid">
-                <div class="accessibility-paragraphs">
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+                        First of we started with colors. We know that there are people who are blind,
+                        as sight-impaired or completely blind. There we made sure to
+                        follow up by taking advantage of screen readers. We made it possible for blind 
+                        people to navigate our website. Also there are people with partial or total loss
+                        of function of a body part, resulting in weakness in their muscles, lack of 
+                        of the basic muscle control that we take for granted. We made the website easier
+                        for users by adding a &#34;skip-to-content&#34;&#45;button. This will shorten the amount
+                        of times they must tabb our website. We remembered to include alt text to every 
+                        image on our site. We did this for visitors that are not able to see images on
+                        our website. This makes sure that we can include all users, regardless of
+                        their visual ability, so they can appreciate our content.
                     </p>
                 </div>
-                <img src="images/Book-contactUs.jpg" alt="" class="accessibility-page-grid-img">
+                <img src="images/altTextForImages.jpg" alt="Image shows descriptive alt text from menu page" class="accessibility-page-grid-img">
             </div>
-            <div class="accessibility-paragraphs">
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
-                </p>
+            <div class="accessibility-page-grid">
+                <div class="accessibility-page-paragraph">
+                    <h2>Contrast checker</h2>
+                    <p>
+                        We focused a lot on color usage on our page. We stayed away from red and green
+                        and we figured out we would choose colors like black&#44; white&#44; dark blue &#38; light blue. 
+                        The nuances in blue was to create contrast with the two first mentioned
+                        colors. We did contrast checks on each of the colors and tested them to make sure the test
+                        at <a href="https://webaim.org/resources/contrastchecker/" target="_blank">Contrast Checker</a> passed 
+                        the test. 
+                    </p>
+                </div>
+                <img src="images/ContrastCheckerTextOnBackground.png" alt="Contrast checker testing darkblue text on white background" class="accessibility-page-grid-img">
             </div>
-            <div class="accessibility-paragraphs">
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
-                </p>
+            <div class="accessibility-page-grid">
+                <div class="accessibility-page-paragraph">
+                    <h2>WCAG &#38; testing</h2>
+                    <p>
+                        Also we took quick mesaure to take use of <a href="https://validator.w3.org/" target="_blank">HTML validator</a>
+                        to check our <abbr title="HyperText Markup Language">HTML</abbr>. We found some problems such as same id being used 
+                        several times. We solved this by the use of classes instead of id, so we could use the id as part of our
+                        &#34;skip-to-content&#34;&#45;button and keep the code as it was, now with reusability. Unfortunately another problem that 
+                        kepht repeating was the overuse of hyphens in comments, which made it not mappable to <abbr title="Extensible Markup Language">XML 1.0</abbr>.
+                        We easily solved this by reducing the hyphens &#40;&#45;&#41; to only three on the left side and two on the right side of the comment.
+                        We tested our <abbr title="Cascading Style Sheets">CSS</abbr> with <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validator</a>.
+                        It was actually really nice tool to quickly check our code! Funny enough, it was mainly just some code like: 
+                        &#60;main class&#61;&#34;topical&#45;page&#34;lang&#61;&#34;en&#34;&#62;, where there were no space &#40;&#32;&#41; between lang and 
+                        the quotation mark &#40;&#34;&#41;.
+                    </p>
+                </div>
+                <img src="images/tooManyHyphensInCommentForXML10.png" alt="HTML validator telling there are too many hyphens and therefor not mappable in XML 1.0" class="accessibility-page-grid-img">
             </div>
-            <div class="access-grid">
-            <div class="accessibility-paragraphs">
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
-                </p>
-            </div>
-            <img src="images/Book-contactUs.jpg" alt="" class="accessibility-page-grid-img">
+            <div class="accessibility-page-grid">
+                <div class="accessibility-page-paragraph">
+                    <p>
+                        At last we used <a href="https://wave.webaim.org/" target="_blank">WAVE Web Accessibility Evaluation Tool (webaim.org)</a>
+                        to check accessibilities on our webpages. Mainly it was two problems. The first one that we had missing labels, which was 
+                        solved easily by changing the spans out with labels, and also adding the correct name to said label. Also we looked into 
+                        different usage of form control for telephone, normal text and textarea. They all after changes passed the test. The second 
+                        flaw seem to be with our navigation, that there was an empty form label. Because we chose to limit ourselves to not use javascript.
+                        Therefor our way to create an awesome navigationbar was simply by the help of unicodes&#58; one for a hamburger together 
+                        with text such as &#40;Menu&#41;, another one for &#40;Close&#41; with another unicode formed like a &#40;X&#41;. This made
+                        it possible for us in our stylesheet to recreate a feasible menu. What we figured out was, that we could get through this 
+                        with the design we held by the use of a space entity. This passed the test.
+                    </p>
+                </div>
+                <img src="images/BookingpageWaveWEBaimdotOrg.png" alt="WCAG result shows five red warnings" class="accessibility-page-grid-img">
             </div>
         </article>
     </main>
