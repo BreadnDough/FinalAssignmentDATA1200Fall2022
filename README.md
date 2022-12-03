@@ -5,7 +5,7 @@ Frederik Alexander Biltvedt/s362044 Ahmed Said Muse/s375121
 Website link: https://breadndough.github.io/FinalAssignmentDATA1200Fall2022/welcome.html
 
 
-SOURCES are mentioned in the html files or linked to the link!
+SOURCES are mentioned in the html files.
 Sources:
 
 https://www.flaticon.com/free-icon/home_25694?term=home&page=1&position=2&page=1&position=2&related_id=25694&origin=search#
